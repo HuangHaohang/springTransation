@@ -1,0 +1,20 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+# 应用名称
+spring:
+  application:
+    name: springTransaction
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springTransaction?serverTimezone=UTC
+#下面这些内容是为了让MyBatis映射
+mybatis:
+  #指定Mybatis的Mapper文件
+  mapper-locations: com.hhh.entity
+  #指定Mybatis的实体目录
+  type-aliases-package: com.hhh.entity
+
+
